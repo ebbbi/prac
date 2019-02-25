@@ -47,6 +47,7 @@ li:first-child{border-left:none;}
   width: 100%;
   min-height: 100vh;
   animation-name:trip;
+  animation-delay: 2s;
   animation-duration: 120s;
   animation-iteration-count: infinite;
 }
