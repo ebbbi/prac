@@ -1,14 +1,16 @@
-
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+#body{
+  font-family: "Nanum Gothic", sans-serif;
+}
 #list {
-  width:200px;
-  float:left;
+  width:100%;
+  line-height: 3;
+  text-align: center;
+  background-color: #CCAEE1;
+  opacity: 0.5;
 }
 #contents {
   overflow: hidden;
-  min-height: 100vh;
-  border-left-color: #CCAEE1;
-  border-left-style: solid;
-  border-left-width: 10px;
   padding-left: 150px;
 }
 a{
@@ -25,12 +27,64 @@ h2{
 }
 ol{
   list-style: none;
+  margin: 0;
 }
 h3{
-  font-size:30px;
+  font-size:25px;
 }
 h5{
   font-size:20px;
+}
+li{
+  display:inline;
+  border-left:1px solid black;
+  padding:0 20px;
+  font-size: 17px;
+  color:red;
+}
+li:first-child{border-left:none;}
+#slide{
+  width: 100%;
+  min-height: 100vh;
+  animation-name:trip;
+  animation-duration: 120s;
+  animation-iteration-count: infinite;
+}
+@keyframes trip{
+  0% {background:url(IMG_0319.JPG);background-repeat:no-repeat;background-size: cover;background-position: center center;}
+  3%{background:url(IMG_0376.JPG);background-repeat:no-repeat;background-size:cover;background-position: center center;}
+  6%{background:url(IMG_0413.JPG);background-repeat:no-repeat;background-size:cover;background-position: center center;}
+  9%{background:url(IMG_0418.JPG);background-repeat:no-repeat;background-size: cover;background-position: center center;}
+  12%{background:url(IMG_0472.JPG);background-repeat:no-repeat; background-size: cover;background-position: center center;}
+  15%{background:url(IMG_0626.JPG);background-repeat:no-repeat;background-size: cover;background-position: center center;}
+  18%{background:url(IMG_0644.JPG);background-repeat:no-repeat;background-size: cover;background-position: center center;}
+  21%{background:url(IMG_0656.JPG);background-repeat:no-repeat;background-size: cover;}
+  24%{background:url(IMG_0698.JPG);background-repeat:no-repeat;background-size: cover;}
+  27%{background:url(IMG_0703.JPG);background-repeat:no-repeat;background-size: cover;}
+  30%{background:url(IMG_0721.JPG);background-repeat:no-repeat;background-size: cover;}
+  33%{background:url(IMG_0750.JPG);background-repeat:no-repeat;background-size: cover;}
+  36%{background:url(IMG_0771.JPG);background-repeat:no-repeat;background-size: cover;}
+  39%{background:url(IMG_0773.JPG);background-repeat:no-repeat;background-size: cover;}
+  42%{background:url(IMG_0776.JPG);background-repeat:no-repeat;background-size: cover;}
+  45%{background:url(IMG_0796.JPG);background-repeat:no-repeat;background-size: cover;}
+  48%{background:url(IMG_0860.JPG);background-repeat:no-repeat;background-size: cover;}
+  51%{background:url(IMG_0861.JPG);background-repeat:no-repeat;background-size: cover;}
+  54%{background:url(IMG_0867.JPG);background-repeat:no-repeat;background-size: cover;}
+  57%{background:url(IMG_0929.JPG);background-repeat:no-repeat;background-size: cover;}
+  60%{background:url(IMG_0950.JPG);background-repeat:no-repeat;background-size: cover;}
+  63%{background:url(IMG_0954.JPG);background-repeat:no-repeat;background-size: cover;}
+  66%{background:url(IMG_0981.JPG);background-repeat:no-repeat;background-size: cover;}
+  69%{background:url(IMG_0999.JPG);background-repeat:no-repeat;background-size: cover;}
+  72%{background:url(IMG_1000.JPG);background-repeat:no-repeat;background-size: cover;}
+  75%{background:url(IMG_1009.JPG);background-repeat:no-repeat;background-size: cover;}
+  78%{background:url(IMG_1010.JPG);background-repeat:no-repeat;background-size: cover;}
+  81%{background:url(IMG_1031.JPG);background-repeat:no-repeat;background-size: cover;}
+  84%{background:url(IMG_1034.JPG);background-repeat:no-repeat;background-size: cover;}
+  87%{background:url(IMG_1048.JPG);background-repeat:no-repeat;background-size: cover;}
+  90%{background:url(IMG_1053.JPG);background-repeat:no-repeat;background-size: cover;}
+  93%{background:url(IMG_1057.JPG);background-repeat:no-repeat;background-size: cover;}
+  96%{background:url(IMG_1072.JPG);background-repeat:no-repeat;background-size: cover;}
+  100%{background:url(IMG_1152.JPG);background-repeat:no-repeat;background-size: cover;}
 }
 @media(max-width:800px){
   #grid{
@@ -38,7 +92,6 @@ h5{
   }
   #contents {
     padding-left:0;
-    border-left:none;
     text-align: center;
   }
   #list {
@@ -46,3 +99,4 @@ h5{
     text-align: center;
     float:none;
   }
+}
