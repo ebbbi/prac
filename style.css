@@ -46,10 +46,10 @@ li:first-child{border-left:none;}
 #slide{
   width: 100%;
   min-height: 100vh;
-  animation-name:trip;
-  animation-delay: 2s;
-  animation-duration: 120s;
-  animation-iteration-count: infinite;
+  -webkit-animation-name:trip;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-duration: 120s;
+  -webkit-animation-iteration-count: infinite;
 }
 @keyframes trip{
   0% {background:url(IMG_0319.JPG);background-repeat:no-repeat;background-size: cover;background-position: center center;}
