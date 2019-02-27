@@ -20,7 +20,63 @@
       <li><a href="danang.html">다낭 & 호이안 맛집</a></li>
     </ol>
   </div>
-    <div id="slide"></div>
+  <div class="slideshow">
+    <img class="slide" src="IMG_0319.JPG">
+    <img class="slide" src="IMG_0376.JPG">
+    <img class="slide" src="IMG_0413.JPG">
+    <img class="slide" src="IMG_0418.JPG">
+    <img class="slide" src="IMG_0472.JPG">
+    <img class="slide" src="IMG_0626.JPG">
+    <img class="slide" src="IMG_0644.JPG">
+    <img class="slide" src="IMG_0656.JPG">
+    <img class="slide" src="IMG_0698.JPG">
+    <img class="slide" src="IMG_0721.JPG">
+    <img class="slide" src="IMG_0750.JPG">
+    <img class="slide" src="IMG_0771.JPG">
+    <img class="slide" src="IMG_0773.JPG">
+    <img class="slide" src="IMG_0776.JPG">
+    <img class="slide" src="IMG_0796.JPG">
+    <img class="slide" src="IMG_0860.JPG">
+    <img class="slide" src="IMG_0861.JPG">
+    <img class="slide" src="IMG_0867.JPG">
+    <img class="slide" src="IMG_0929.JPG">
+    <img class="slide" src="IMG_0950.JPG">
+    <img class="slide" src="IMG_0954.JPG">
+    <img class="slide" src="IMG_0981.JPG">
+    <img class="slide" src="IMG_0997.JPG">
+    <img class="slide" src="IMG_0999.JPG">
+    <img class="slide" src="IMG_1000.JPG">
+    <img class="slide" src="IMG_1009.JPG">
+    <img class="slide" src="IMG_1010.JPG">
+    <img class="slide" src="IMG_1031.JPG">
+    <img class="slide" src="IMG_1034.JPG">
+    <img class="slide" src="IMG_1048.JPG">
+    <img class="slide" src="IMG_1053.JPG">
+    <img class="slide" src="IMG_1057.JPG">
+    <img class="slide" src="IMG_1072.JPG">
+    <img class="slide" src="IMG_1152.JPG">
+    <img class="slide" src="IMG_1253.JPG">
+    <img class="slide" src="IMG_1254.JPG">
+  </div>
+
+  <script>
+  var index=0;
+  carousel();
+
+  function carousel(){
+    var i;
+    var x=document.getElementsByClassName('slide');
+    for(i=0;i<x.length;i++){
+      x[i].style.display='none';
+    }
+    index++;
+    if(index>x.length){
+      index=1;
+    }
+    x[index-1].style.display='block';
+    setTimeout(carousel, 3000);
+  }
+  </script>
 </div>
 </body>
 </html>

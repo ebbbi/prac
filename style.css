@@ -13,6 +13,17 @@
   overflow: hidden;
   padding-left: 150px;
 }
+ol{
+  list-style: none;
+  margin: 0;
+}
+li{
+  display:inline;
+  border-left:1px solid black;
+  padding:0 20px;
+  font-size: 17px;
+}
+li:first-child{border-left:none;}
 a{
   color:black;
   text-decoration:none;
@@ -25,67 +36,14 @@ h2{
   text-align:center;
   margin:0;
 }
-ol{
-  list-style: none;
-  margin: 0;
-}
 h3{
   font-size:25px;
 }
 h5{
   font-size:20px;
 }
-li{
-  display:inline;
-  border-left:1px solid black;
-  padding:0 20px;
-  font-size: 17px;
-  color:red;
-}
-li:first-child{border-left:none;}
-#slide{
-  width: 100%;
-  min-height: 100vh;
-  -webkit-animation-name:trip;
-  -webkit-animation-delay: 2s;
-  -webkit-animation-duration: 120s;
-  -webkit-animation-iteration-count: infinite;
-}
-@keyframes trip{
-  0% {background:url(IMG_0319.JPG);background-repeat:no-repeat;background-size: cover;background-position: center center;}
-  3%{background:url(IMG_0376.JPG);background-repeat:no-repeat;background-size:cover;background-position: center center;}
-  6%{background:url(IMG_0413.JPG);background-repeat:no-repeat;background-size:cover;background-position: center center;}
-  9%{background:url(IMG_0418.JPG);background-repeat:no-repeat;background-size: cover;background-position: center center;}
-  12%{background:url(IMG_0472.JPG);background-repeat:no-repeat; background-size: cover;background-position: center center;}
-  15%{background:url(IMG_0626.JPG);background-repeat:no-repeat;background-size: cover;background-position: center center;}
-  18%{background:url(IMG_0644.JPG);background-repeat:no-repeat;background-size: cover;background-position: center center;}
-  21%{background:url(IMG_0656.JPG);background-repeat:no-repeat;background-size: cover;background-position: center center;}
-  24%{background:url(IMG_0698.JPG);background-repeat:no-repeat;background-size: cover;background-position: center center;}
-  27%{background:url(IMG_0703.JPG);background-repeat:no-repeat;background-size: cover;background-position: center center;}
-  30%{background:url(IMG_0721.JPG);background-repeat:no-repeat;background-size: cover;background-position: center center;}
-  33%{background:url(IMG_0750.JPG);background-repeat:no-repeat;background-size: cover;background-position: center center;}
-  36%{background:url(IMG_0771.JPG);background-repeat:no-repeat;background-size: cover;background-position: center center;}
-  39%{background:url(IMG_0773.JPG);background-repeat:no-repeat;background-size: cover;background-position: center center;}
-  42%{background:url(IMG_0776.JPG);background-repeat:no-repeat;background-size: cover;background-position: center center;}
-  45%{background:url(IMG_0796.JPG);background-repeat:no-repeat;background-size: cover;background-position: center center;}
-  48%{background:url(IMG_0860.JPG);background-repeat:no-repeat;background-size: cover;background-position: center center;}
-  51%{background:url(IMG_0861.JPG);background-repeat:no-repeat;background-size: cover;background-position: center center;}
-  54%{background:url(IMG_0867.JPG);background-repeat:no-repeat;background-size: cover;background-position: center center;}
-  57%{background:url(IMG_0929.JPG);background-repeat:no-repeat;background-size: cover;background-position: center center;}
-  60%{background:url(IMG_0950.JPG);background-repeat:no-repeat;background-size: cover;background-position: center center;}
-  63%{background:url(IMG_0954.JPG);background-repeat:no-repeat;background-size: cover;background-position: center center;}
-  66%{background:url(IMG_0981.JPG);background-repeat:no-repeat;background-size: cover;background-position: center center;}
-  69%{background:url(IMG_0999.JPG);background-repeat:no-repeat;background-size: cover;background-position: center center;}
-  72%{background:url(IMG_1000.JPG);background-repeat:no-repeat;background-size: cover;background-position: center center;}
-  75%{background:url(IMG_1009.JPG);background-repeat:no-repeat;background-size: cover;background-position: center center;}
-  78%{background:url(IMG_1010.JPG);background-repeat:no-repeat;background-size: cover;background-position: center center;}
-  81%{background:url(IMG_1031.JPG);background-repeat:no-repeat;background-size: cover;background-position: center center;}
-  84%{background:url(IMG_1034.JPG);background-repeat:no-repeat;background-size: cover;background-position: center center;}
-  87%{background:url(IMG_1048.JPG);background-repeat:no-repeat;background-size: cover;background-position: center center;}
-  90%{background:url(IMG_1053.JPG);background-repeat:no-repeat;background-size: cover;background-position: center center;}
-  93%{background:url(IMG_1057.JPG);background-repeat:no-repeat;background-size: cover;background-position: center center;}
-  96%{background:url(IMG_1072.JPG);background-repeat:no-repeat;background-size: cover;background-position: center center;}
-  100%{background:url(IMG_1152.JPG);background-repeat:no-repeat;background-size: cover;background-position: center center;}
+.slide{
+  width:100%;
 }
 @media(max-width:800px){
   #grid{
