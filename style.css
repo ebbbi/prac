@@ -1,25 +1,55 @@
-@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
-#body{
-  font-family: "Nanum Gothic", sans-serif;
+@font-face {
+font-family: 'GyeonggiBatang';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiBatang.woff') format('woff');
+font-weight: normal;
+font-style: normal; }
+body{
+  font-family: 'GyeonggiBatang';
+}
+#grid{
+  margin-top: 15px;
 }
 #list {
-  width:100%;
-  line-height: 3;
+  width:900px;
+  line-height: 2;
   text-align: center;
   background-color: #CCAEE1;
-  opacity: 0.5;
+  opacity: 0.6;
+  height:30px;
+  padding:6px;
+  margin:0 auto;
+  list-style: none;
+}
+#list a{
+  display: inline-block;
 }
 #contents {
   overflow: hidden;
-  padding-left: 150px;
+  padding-left: 250px;
 }
-ol{
-  list-style: none;
-  margin: 0;
+#box{
+  margin-top: 25px;
+  width:800px;
+  height:700px;
+  margin-left:250px;
 }
+#info{
+  float:right;
+  width:395px;
+  height: 267px;
+  overflow: hidden;
+  opacity:0.3;
+  color:white;
+  background-color: #B689CA;
+  display: inline;
+  font-size: 35px;
+}
+#contents{
+  line-height: 1.6;
+}
+
 li{
-  display:inline;
-  border-left:1px solid black;
+  display:inline-block;
   padding:0 20px;
   font-size: 17px;
 }
@@ -42,8 +72,17 @@ h3{
 h5{
   font-size:20px;
 }
+.slideshow{
+  display: inline;
+}
 .slide{
-  width:100%;
+  width:400px;
+  display: inline;
+}
+.slide2{
+  padding-left: 400px;
+  width:400px;
+  display: inline;
 }
 @media(max-width:800px){
   #grid{
